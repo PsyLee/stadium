@@ -1,0 +1,10 @@
+TARGETS = primer
+LLDLIBS = -lGL -lGLU -lglut
+default: $(TARGETS)
+all: default
+.c.o:
+	gcc -c $<
+$(TARGETS): $(TARGETS).o
+	gcc $@.o -L . $(LLDLIBS) -o $@
+clean:  
+	rm -f *.o $(TARGETS)
