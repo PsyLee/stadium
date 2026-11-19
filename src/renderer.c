@@ -2,6 +2,7 @@
 #include "geometry/geometry.h"
 #include "lighting.h"
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 
 float Y=70, Yce=70, rotateA=0, rotateAspeed=0.0f;
