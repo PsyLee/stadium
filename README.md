@@ -1,8 +1,7 @@
 # Stadium
 
 A 3D football stadium visualization written in C using legacy OpenGL, GLU,
-and FreeGLUT. The project renders stadium geometry, seating, goals, lighting,
-projected shadows, and bitmap textures.
+and FreeGLUT.
 
 ## Requirements
 
@@ -17,8 +16,7 @@ A working OpenGL-compatible graphics driver and display session are also require
 
 ## Build and run
 
-Run from the repository root (texture assets are loaded relative to the
-working directory):
+Run from the repository root so the BMP texture paths resolve:
 
 ```sh
 make -f Makefilelinux clean all
@@ -44,22 +42,8 @@ Clean generated files with `make -f Makefilelinux clean`.
 
 ## Source layout
 
-- `src/main.c` — GLUT entry point and callback registration.
-- `src/app.h` — shared application declarations and module interfaces.
-- `src/app_state.c` — shared camera, lighting, render-mode, and texture state.
-- `src/camera.c` — keyboard controls and idle updates.
-- `src/renderer.c` — scene display, OpenGL setup, texture upload, and GL diagnostics.
-- `src/geometry.c` — stadium, pitch, stands, goals, seating, and scene geometry.
-- `src/math3d.c` — vector normals and shadow projection math.
-- `utils.c`, `utils.h` — BMP loading and image cleanup.
-- `*.bmp` — texture assets.
+- `primer.c` — scene geometry, rendering, lighting, camera, and input.
+- `utils.c`, `utils.h` — BMP image loading and image-memory cleanup.
+- `*.bmp` — textures used by the scene.
 
-The renderer intentionally remains on fixed-function OpenGL in this phase.
-The module boundaries make a future shader/VBO migration easier without
-requiring a visual rewrite now.
-
-## Bitmap support
-
-The image loader accepts uncompressed 24-bit BMP files with a Windows-style
-DIB header of at least 40 bytes. It handles padded scanlines and both
-bottom-up and top-down images, converting BGR pixels to RGB.
+The renderer uses the fixed-function OpenGL pipeline and immediate-mode geometry.
