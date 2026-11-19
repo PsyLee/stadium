@@ -1,22 +1,13 @@
-# Compiled objects and executables
 *.o
 *.obj
-*.lo
-*.slo
-*.gch
-*.pch
 /primer
-
-# Libraries
+/tests/test_image
+/tests/image_fixture.bmp
 *.a
-*.lib
-*.la
-*.lai
 *.so
 *.dylib
 *.dll
-
-# Editor and backup files
+*.exe
 *~
 *.swp
 *.swo
