@@ -1,14 +1,22 @@
-#include <stdio.h>      // Header file for standard file i/o.
-#include <stdlib.h>     // Header file for malloc/free.
+#ifndef STADIUM_UTILS_H
+#define STADIUM_UTILS_H
 
-/* Image type - contains height, width, and data */
-struct Image {
+#include <stddef.h>
+
+/* 24-bit RGB image data, stored bottom row first for OpenGL. */
+typedef struct Image {
     unsigned long sizeX;
     unsigned long sizeY;
     char *data;
-};
-typedef struct Image Image;
+} Image;
 
-// quick and dirty bitmap loader...for 24 bit bitmaps with 1 plane only.  
-// See http://www.dcs.ed.ac.uk/~mxr/gfx/2d/BMP.txt for more info.
-int ImageLoad(char *filename, Image *image);
+/*
+ * Load an uncompressed 24-bit BMP image.
+ * Returns 1 on success and 0 on failure.
+ */
+int ImageLoad(const char *filename, Image *image);
+
+/* Release pixel data and reset the image structure. */
+void ImageFree(Image *image);
+
+#endif /* STADIUM_UTILS_H */

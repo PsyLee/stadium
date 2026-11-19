@@ -1,10 +1,24 @@
-TARGETS = primer
-LLDLIBS = -lGL -lGLU -lglut
-default: $(TARGETS)
-all: default
-.c.o:
-	gcc -c $<
-$(TARGETS): $(TARGETS).o
-	gcc $@.o -L . $(LLDLIBS) -o $@
-clean:  
-	rm -f *.o $(TARGETS)
+CC ?= gcc
+TARGET := primer
+SOURCES := src/main.c src/app_state.c src/math3d.c src/geometry.c src/renderer.c src/camera.c utils.c
+OBJECTS := $(SOURCES:.c=.o)
+
+CPPFLAGS ?= -I.
+CFLAGS ?= -O2 -Wall -Wextra
+LDLIBS := -lglut -lGLU -lGL -lm
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(LDFLAGS) -o $@ $(OBJECTS) $(LDLIBS)
+
+%.o: %.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+src/%.o: src/%.c src/app.h
+utils.o: utils.h
+
+clean:
+	rm -f $(OBJECTS) primer.o primer

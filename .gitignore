@@ -1,29 +1,22 @@
-# Compiled Object files
-*.slo
-*.lo
+# Compiled objects and executables
 *.o
 *.obj
-
-# Precompiled Headers
+*.lo
+*.slo
 *.gch
 *.pch
+/primer
 
-# Compiled Dynamic libraries
+# Libraries
+*.a
+*.lib
+*.la
+*.lai
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Editor and backup files
+*~
+*.swp
+*.swo
