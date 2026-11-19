@@ -120,3 +120,19 @@ stadium/
 ## Implementation notes
 
 The renderer currently uses legacy fixed-function OpenGL. This repository's modular structure is a code-organization improvement; it is not a migration to a modern shader-based OpenGL renderer.
+
+
+## WebGL browser edition
+
+A browser-based WebGL 2 edition is available in [`webgl/`](webgl/). It uses Three.js to render a procedural stadium scene with interactive camera controls, movable spotlight, shadow mapping, and solid / wireframe / point display modes.
+
+Run it locally:
+
+```sh
+cd webgl
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+See [`webgl/README.md`](webgl/README.md) for browser controls and migration notes. The original C/OpenGL application remains intact.
