@@ -2,7 +2,7 @@
 #include <GL/freeglut.h>
 #include <math.h>
 #include <stdlib.h>  
-#include "utils.c"
+#include "utils.h"
 
 float Y=70;
 float Yce=70;
