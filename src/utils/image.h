@@ -1,5 +1,5 @@
-#ifndef STADIUM_UTILS_H
-#define STADIUM_UTILS_H
+#ifndef STADIUM_IMAGE_H
+#define STADIUM_IMAGE_H
 
 #include <stddef.h>
 
@@ -19,4 +19,4 @@ int ImageLoad(const char *filename, Image *image);
 /* Release pixel data and reset the image structure. */
 void ImageFree(Image *image);
 
-#endif /* STADIUM_UTILS_H */
+#endif /* STADIUM_IMAGE_H */

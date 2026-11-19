@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "image.h"
 
 #include <stdint.h>
 #include <stdio.h>
