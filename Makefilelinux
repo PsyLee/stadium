@@ -1,6 +1,6 @@
 CC ?= gcc
 TARGET := primer
-SOURCES := src/main.c src/app_state.c src/math3d.c src/geometry.c src/renderer.c src/camera.c utils.c
+SOURCES := primer.c utils.c
 OBJECTS := $(SOURCES:.c=.o)
 
 CPPFLAGS ?= -I.
@@ -17,8 +17,8 @@ $(TARGET): $(OBJECTS)
 %.o: %.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
-src/%.o: src/%.c src/app.h
+primer.o: utils.h
 utils.o: utils.h
 
 clean:
-	rm -f $(OBJECTS) primer.o primer
+	rm -f $(OBJECTS) primer
