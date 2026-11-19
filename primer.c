@@ -1962,21 +1962,9 @@ Image *image1;
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image1->sizeX, image1->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image1->data);
    
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image1->sizeX, image1->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image1->data);
-   
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image1->sizeX, image1->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image1->data);
-   
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image1->sizeX, image1->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image1->data);
-   
- = NULL;
+    ImageFree(image1);
+    free(image1);
+    image1 = NULL;
 ////////////////////////////////////////////////
 Image *image2;
 
@@ -1998,18 +1986,9 @@ glGenTextures(1, &parket);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image2->sizeX, image2->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image2->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image2->sizeX, image2->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image2->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image2->sizeX, image2->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image2->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image2->sizeX, image2->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image2->data);
- = NULL;
+    ImageFree(image2);
+    free(image2);
+    image2 = NULL;
 ////////////////////////////////////////////////
 Image *image3;
 
@@ -2033,21 +2012,9 @@ Image *image3;
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image3->sizeX, image3->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image3->data);
    
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image3->sizeX, image3->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image3->data);
-   
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image3->sizeX, image3->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image3->data);
-   
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image3->sizeX, image3->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image3->data);
-   
- = NULL;
+    ImageFree(image3);
+    free(image3);
+    image3 = NULL;
 /////////////////////////////////////////////////
 
 Image *image4;
@@ -2071,18 +2038,9 @@ Image *image4;
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image4->sizeX, image4->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image4->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image4->sizeX, image4->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image4->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image4->sizeX, image4->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image4->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image4->sizeX, image4->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image4->data);
- = NULL;
+    ImageFree(image4);
+    free(image4);
+    image4 = NULL;
 ////////////////////////////////////////////////
 
 Image *image5;
@@ -2105,18 +2063,9 @@ glGenTextures(1, &stativi);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image5->sizeX, image5->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image5->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image5->sizeX, image5->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image5->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image5->sizeX, image5->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image5->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image5->sizeX, image5->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image5->data);
- = NULL;
+    ImageFree(image5);
+    free(image5);
+    image5 = NULL;
 ////////////////////////////////////////////////
 
 Image *image6;
@@ -2139,18 +2088,9 @@ glGenTextures(1, &precki);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image6->sizeX, image6->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image6->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image6->sizeX, image6->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image6->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image6->sizeX, image6->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image6->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image6->sizeX, image6->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image6->data);
- = NULL;
+    ImageFree(image6);
+    free(image6);
+    image6 = NULL;
 ////////////////////////////////////////////////
 Image *image7;
 
@@ -2172,18 +2112,9 @@ glGenTextures(1, &wood);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image7->sizeX, image7->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image7->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image7->sizeX, image7->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image7->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image7->sizeX, image7->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image7->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image7->sizeX, image7->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image7->data);
- = NULL;
+    ImageFree(image7);
+    free(image7);
+    image7 = NULL;
 ////////////////////////////////////////////////
 Image *image8;
 
@@ -2205,18 +2136,9 @@ glGenTextures(1, &metal);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR); 
     glTexImage2D(GL_TEXTURE_2D, 0, 3, image8->sizeX, image8->sizeY, 
                 0, GL_RGB, GL_UNSIGNED_BYTE, image8->data);
-    ImageFree(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image8->sizeX, image8->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image8->data);
-);
-    free(image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image8->sizeX, image8->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image8->data);
-);
-    image 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, image8->sizeX, image8->sizeY, 
-                0, GL_RGB, GL_UNSIGNED_BYTE, image8->data);
- = NULL;
+    ImageFree(image8);
+    free(image8);
+    image8 = NULL;
 ////////////////////////////////////////////////
 
    
